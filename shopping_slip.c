@@ -3,7 +3,7 @@
 int main()
 {
     char letternN1,letternN2,letter_3;
-    int nN20000,nN500,nnN2000,nN100,nN50,nN20,nN10,nC100,nN5,nC5,nN2,nC2,nN1,nC1;
+    int nN20000,nN500,nnN2000,nN100,nN50,nN20,nN10,nC100,nN5,nC5,nN2,nC2,nN1,nC1,nC10;
     int t2000,t500,t200,t100,t50,t20,t10,t5,t2,t1;
     int total;
                 printf("WELCOME TO SAI SUPERMARKET ! \n");

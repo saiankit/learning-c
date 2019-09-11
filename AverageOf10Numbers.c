@@ -2,7 +2,7 @@
 int main()
 {
 	float a,s;
-	int i
+	int i;
 	for(s=0,i=1;i<11;i++)
 	{
 		s = s +i ;

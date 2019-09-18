@@ -25,7 +25,15 @@ int main()
             }
             else
             {
-                printf("The point entered is in III Quadrant. \n");
+                if ((x<0)&&(y<0))
+                {
+                printf("The point entered is in III Quadrant. \n");               
+                }
+                else
+                {
+                    printf("The point entered is origin. \n ");
+                }
+                
             }
         }
     }

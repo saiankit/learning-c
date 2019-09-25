@@ -3,6 +3,9 @@ int main()
 {
     //printing a pattern of diamond  
     int r,i,j;
+    char c;
+    printf("Please enter the character you want to print in the diamond pattern \n");
+    scanf("%c",&c);
     printf("Please enter the number of rows you want to print the diamond \n");
     scanf("%d",&r);
     //The Loop
@@ -14,7 +17,7 @@ int main()
         }
         for(j = ((r/2)-i+2); j <= ((r/2)+i) ;j++)
         {
-            printf("*");
+            printf("%c",c);
         }
         for (j=((r/2)+i+1) ;j <= r; j++)
         {
@@ -26,7 +29,7 @@ int main()
     {
         for (j = 1; j <=  r; j++)
         {
-            printf("*");
+            printf("%c",c);
         }
         printf("\n");  
     }
@@ -38,7 +41,7 @@ int main()
         }
         for (j =(i-(r/2)); j <= (r+1-(i-(r/2))); j++)
         {
-            printf("*");
+            printf("%c",c);
         }
         for (j = (r+2-(i-(r/2))); j <= r; j++)
         {

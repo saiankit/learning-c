@@ -10,5 +10,5 @@ int main()
     {
         Product = Product * i;
     }
-    printf("The value of %d! is %d \n",n,Product);
+    printf("The value of %d! is %d \n ",n,Product);
 }

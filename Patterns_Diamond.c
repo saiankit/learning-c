@@ -8,6 +8,11 @@ int main()
     scanf("%c",&c);
     printf("Please enter the number of rows you want to print the diamond \n");
     scanf("%d",&r);
+    while (r%2==0)
+    {
+        printf("Please enter only odd number of rows to print a perfect diamond \n");
+        scanf("%d",&r);
+    }
     //The Loop
     for (i = 1; i <= r/2; i++)
     {

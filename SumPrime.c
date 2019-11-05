@@ -25,7 +25,7 @@ int checkprime(int a)
 }
 int main()
 {
-    int num,fact;
+    int num;
     int sum=0;
     printf("Please enter a number \n");
     scanf("%d",&num);
@@ -33,7 +33,6 @@ int main()
     {
         if(num%i==0)
         {
-            fact = i;
             if(checkprime(i)==0);
             else if (checkprime(i)==1)
             {

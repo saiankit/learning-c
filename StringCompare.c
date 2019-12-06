@@ -7,7 +7,7 @@ int main()
 	scanf("%s",str1);
 	printf("Enter the number2.\n");
 	scanf("%s",str2);
-	if (strcmp(str1,str2)==1||strcmp(str1,str2)==-1)
+	if (strcmp(str1,str2)>0||strcmp(str1,str2)<0)
 	{
 		printf("The strings are not same.\n");
 	}

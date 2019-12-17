@@ -32,12 +32,12 @@ node *createandlinkatend(node *head,int data)
 
     return newnode;
 }
-void printlist(node *head)
+void printlist(node *head,int loopingconstraint)
 {
     node *temp;
     temp = (node *)malloc(sizeof( node));
     temp = head;
-    for(int i=0;i<5;i++)
+    for(int i=0;i<=loopingconstraint+1;i++)
     {
         printf("%d",temp ->data);
         temp = temp->next;
@@ -46,18 +46,26 @@ void printlist(node *head)
 }
 int main()
 {
+
+    int n,head_data;
+    printf("Enter the number of nodes.\n");
+    scanf("%d",&n);
+    printf("\nEnter the value at node #1 ->");
+    scanf("%d",&head_data);
     node *head = (node *)malloc(sizeof(node));
-    head ->data = 1;
+    head ->data = head_data;
     head ->next = NULL;
-
-    for (int i = 1; i <= 4; i++)
+    if(n>1)
     {
-        node * a;
-        int f;
-
-        scanf("%d",&f);
-        a = createandlinkatend(head,f);
+        for (int i = 1; i < n; i++)
+        {
+            node * a;
+            int f;
+            printf("\nEnter the value at node #%d ->",i+1);
+            scanf("%d",&f);
+            a = createandlinkatend(head,f);
+        }
     }
-    printlist(head);
-    
+    printf("\n");
+    printlist(head,n);
 }

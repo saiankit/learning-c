@@ -40,7 +40,7 @@ int main()
     }
     for (i = ((r/2)+2); i <= r; i++)
     {
-        for (j = 1; j <(i-(r/2)) ; j++)
+        for (j = 1; j <=(i-(r/2)-1) ; j++)
         {
             printf(" ");
         }

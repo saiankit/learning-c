@@ -3,7 +3,7 @@
 int checkprime(int a)
 {
     int flag;
-    for(int i = 2; i <= sqrt(a); ++i)
+
     {
         if(a%i == 0)
         {
@@ -33,7 +33,7 @@ int main()
     {
         if(num%i==0)
         {
-            if(checkprime(i)==0);
+            if(checkprime(i));
             else if (checkprime(i)==1)
             {
                 sum = sum + i;
